@@ -1,8 +1,6 @@
 body {
-    /* height: 100%; */
     margin: 0;
     box-sizing: border-box;
-    /* width: 100%; */
     font-family: 'Hina Mincho', serif;
 }
 
@@ -13,9 +11,6 @@ header {
     /* background-position: center; */
     /* background-repeat: no-repeat; */
     background-size: cover;
-
-
-    display: flex;
     justify-content: flex-end;
 }
 
@@ -27,13 +22,11 @@ header {
 }
 
 .transparentOverlay {
-    /* position: absolute; */
     background: rgba(114, 114, 114, 0.509);
     width: 30%;
     height: 20rem;
     display: flex;
     flex-direction: column;
-    /* justify-content: end; */
     justify-content: center;
     align-items: center;
     padding: 2rem;
@@ -50,10 +43,8 @@ h2 {
 }
 
 .services {
-    /* width: 90%; */
     text-align: center;
     padding: 1rem 4rem;
-    /* background: chartreuse; */
 }
 
 .gallery {
@@ -80,7 +71,6 @@ input, textarea {
     padding: .3rem;
 }
 
-
 button {
     background: rgb(40, 63, 49);
     color: white;
@@ -93,16 +83,12 @@ button {
 
 footer {
     background: grey; 
-    padding: 1rem 5rem;
-    justify-content: space-evenly;
-    align-items: start;
+    padding: 0 5rem;
     margin-top: 2rem;
+    font-size: small;
 }
 
-
-
 /* REUSABLE CLASSES */
-
 .flex {
     display: flex;
 }
@@ -117,7 +103,32 @@ footer {
 }
 
 @media (max-width: 700px) {
+
     .services {
         flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .aboutText {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .transparentOverlay {
+        width: 100%;
+    }
+
+    .contactArea {
+        flex-direction: column;
+    }
+
+    form {
+        padding-top: 0;
+    }
+
+    .address {
+        flex-direction: column;
+        /* align-items: center; */
     }
 }
