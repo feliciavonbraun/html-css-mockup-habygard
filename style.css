@@ -8,8 +8,6 @@ header {
     background-image: url("./assets/landskap.jpeg"); 
     height: 100%;
     width: 100%;
-    /* background-position: center; */
-    /* background-repeat: no-repeat; */
     background-size: cover;
     justify-content: flex-end;
 }
@@ -129,6 +127,6 @@ footer {
 
     .address {
         flex-direction: column;
-        /* align-items: center; */
+        text-align: center;
     }
 }
